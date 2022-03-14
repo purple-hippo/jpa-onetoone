@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pgdb:
+    image: postgres
+    container_name: postgres_db_test
+    environment:
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=test
+    ports:
+      - "5432:5432"
